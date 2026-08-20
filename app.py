@@ -82,14 +82,16 @@ tab_quem_sou = dbc.Card(
             ], width=4, className="text-center border-end"),
             dbc.Col([
                 html.H3("Minibio Profissional"),
-                html.P("""Entusiasta de tecnologia com foco em Cibersegurança e Desenvolvimento Web.
-                    Cursando Engenharia de Software na FIAP, busco minha primeira oportunidade
-                    formal no mercado para aplicar conhecimentos em Python, Java e boas práticas
-                    de segurança da informação. Vivência internacional e forte capacidade de
-                    aprendizado contínuo.""", style={"text-align": "justify"}),
+                html.P("""Entusiasta de tecnologia com forte interesse em Segurança da Informação.
+                    Cursando Engenharia de Software na FIAP, busco constantemente aprender sobre a
+                    área por conta própria. Tenho experiência em projetos acadêmicos e em parceria
+                    com empresas reais (TOTVS, Passa a Bola), desenvolvendo soluções com Python,
+                    Java, JavaScript e boas práticas de programação. Vivência internacional e
+                    fluência em inglês.""", style={"text-align": "justify"}),
                 html.H4("Objetivo", className="mt-4"),
-                html.P("Atuar como Desenvolvedor de Software ou Analista de Segurança Júnior, "
-                       "contribuindo com soluções robustas e seguras."),
+                html.P("Iniciar minha carreira na área de Segurança da Informação, aplicando os "
+                       "conhecimentos desenvolvidos na graduação e adquirindo experiência prática "
+                       "para continuar evoluindo na área."),
                 html.H4("Diferenciais", className="mt-4"),
                 html.Ul([
                     html.Li("Inglês fluente (intercâmbio no Canadá - 2023)"),
@@ -122,17 +124,37 @@ tab_qualificacoes = dbc.Card(
                 ]),
             ], width=6),
             dbc.Col([
-                html.H4("Experiência & Projetos"),
+                html.H4("Experiências & Projetos Reais"),
                 dbc.Accordion([
                     dbc.AccordionItem(
-                        "Protótipo de aplicativo/site desenvolvido em Figma, com metodologia de "
-                        "Design Centrado no Usuário e pesquisa de campo. Obteve 80% de feedback "
-                        "positivo dos usuários testadores sobre usabilidade.",
+                        [
+                            html.P("Solução desenvolvida em equipe em parceria com a TOTVS, "
+                                   "utilizando Inteligência Artificial para analisar transcrições "
+                                   "de reuniões e identificar pontos que poderiam passar "
+                                   "despercebidos pelos participantes."),
+                            html.P([html.Strong("Tecnologias: "),
+                                    "JavaScript, HTML, CSS e Python."], className="mb-0"),
+                        ],
+                        title="Projeto TOTVS - Análise de Reuniões com IA (2026)",
+                    ),
+                    dbc.AccordionItem(
+                        [
+                            html.P("Protótipo de aplicativo/site desenvolvido em Figma, com "
+                                   "pesquisa de campo e metodologia de Design Centrado no Usuário. "
+                                   "Foco em resolver gargalos operacionais e melhorar a experiência "
+                                   "dos usuários."),
+                            html.P([html.Strong("Resultado: "),
+                                    "80% de feedback positivo dos usuários testadores."],
+                                   className="mb-0"),
+                        ],
                         title="Projeto Passa a Bola (Mai-Jun 2025)",
                     ),
                     dbc.AccordionItem(
-                        "Período de estudos em Winnipeg, Canadá, consolidando fluência em inglês "
-                        "técnico e acadêmico.",
+                        [
+                            html.P("Período de estudos em Winnipeg, Canadá, que contribuiu para o "
+                                   "desenvolvimento pessoal e para a fluência em inglês técnico e "
+                                   "acadêmico."),
+                        ],
                         title="Intercâmbio Cultural e Acadêmico (2023)",
                     ),
                 ]),
