@@ -180,7 +180,7 @@ tab_skills = dbc.Card(
             ], width=6),
             dbc.Col([
                 html.H4("Soft Skills & Idiomas"),
-                html.P("Inglês Fluente (C1/C2)"),
+                html.P("Inglês Fluente (B2/C1)"),
                 dbc.Progress(value=90, color="primary", className="mb-3"),
                 html.H5("Competências Comportamentais", className="mt-4"),
                 dbc.Badge("Design Thinking", color="secondary", className="me-1 p-2 mb-1"),
