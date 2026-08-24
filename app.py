@@ -316,5 +316,8 @@ def update_graphs(selected_exp):
 
     return fig_jobs, fig_exp, fig_evo, insights
 
+
+server = app.server
+
 if __name__ == "__main__":
     app.run(debug=True)
